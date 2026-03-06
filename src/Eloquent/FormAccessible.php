@@ -23,12 +23,12 @@ trait FormAccessible
      */
     public function getFormValue($key)
     {
-        $value = $this->getAttributeFromArray($key);
+        $value = $this->attributes[$key] ?? null;
 
         // If the attribute is listed as a date, we will convert it to a DateTime
         // instance on retrieval, which makes it quite convenient to work with
         // date fields without having to create a mutator for each property.
-        if (in_array($key, $this->getDates())) {
+        if (method_exists($this, 'getDates') && in_array($key, $this->getDates())) {
             if (! is_null($value)) {
                 $value = $this->asDateTime($value);
             }
