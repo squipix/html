@@ -1,11 +1,11 @@
 <?php
 
-namespace Collective\Html;
+namespace Squipix\Html;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Collective\Html\FormBuilder
+ * @see \Squipix\Html\FormBuilder
  */
 class FormFacade extends Facade
 {

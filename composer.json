@@ -1,6 +1,6 @@
 {
     "name": "squipix/html",
-    "description": "HTML and Form Builders for the Laravel Framework",
+    "description": "Drop-in replacement for collective/html: HTML and Form Builders for the Laravel Framework",
     "license": "MIT",
     "homepage": "https://laravel.squipix.com",
     "support": {
@@ -36,7 +36,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Collective\\Html\\": "src/"
+            "Squipix\\Html\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -48,15 +48,15 @@
         },
         "laravel": {
             "providers": [
-                "Collective\\Html\\HtmlServiceProvider"
+                "Squipix\\Html\\HtmlServiceProvider"
             ],
             "aliases": {
-                "Form": "Collective\\Html\\FormFacade",
-                "Html": "Collective\\Html\\HtmlFacade"
+                "Form": "Squipix\\Html\\FormFacade",
+                "Html": "Squipix\\Html\\HtmlFacade"
             }
         }
     },
+    "version": "1.0.0",
     "minimum-stability": "dev",
-    "abandoned": "spatie/laravel-html",
     "prefer-stable": true
 }
