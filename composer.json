@@ -1,6 +1,6 @@
 {
     "name": "squipix/html",
-    "description": "Drop-in replacement for collective/html: HTML and Form Builders for the Laravel Framework",
+    "description": "Fork and a Drop-in replacement for collective/html: HTML and Form Builders for the Laravel Framework",
     "license": "MIT",
     "homepage": "https://laravel.squipix.com",
     "support": {
