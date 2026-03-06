@@ -1,12 +1,49 @@
-![LaravelCollective HTML](LaravelCollectiveHTML-banner.png)
 
-[![Build Status](https://travis-ci.org/LaravelCollective/html.svg)](https://travis-ci.org/LaravelCollective/html)
-[![Total Downloads](https://poser.pugx.org/LaravelCollective/html/downloads)](https://packagist.org/packages/laravelcollective/html)
-[![Latest Stable Version](https://poser.pugx.org/LaravelCollective/html/v/stable.svg)](https://packagist.org/packages/laravelcollective/html)
-[![Latest Unstable Version](https://poser.pugx.org/LaravelCollective/html/v/unstable.svg)](https://packagist.org/packages/laravelcollective/html)
-[![License](https://poser.pugx.org/LaravelCollective/html/license.svg)](https://packagist.org/packages/laravelcollective/html)
+# Squipix HTML (Fork of LaravelCollective/html)
 
-Official documentation for Forms & Html for The Laravel Framework can be found at the [LaravelCollective](https://laravelcollective.com/docs) website.
+This package is a **drop-in replacement** for [collective/html](https://github.com/LaravelCollective/html), updated for Laravel 12 and PHP 8.2+ compatibility.
 
-## Replacement
-If you're looking to replace this package due to it's retirement we recommend using [Shift](https://laravelshift.com/convert-laravelcollective-html-to-spatie-laravel-html)
+## What is this?
+
+Squipix HTML is a fork of the original LaravelCollective/html library, maintained to support modern Laravel versions (11, 12+) and recent PHP releases. It preserves all original APIs and functionality, so you can switch from `collective/html` with minimal changes.
+
+## Why fork?
+
+LaravelCollective/html is no longer maintained and does not support Laravel 12. This fork updates dependencies, fixes compatibility issues, and resolves PHP deprecations.
+
+## Installation
+
+Install via Composer:
+
+```
+composer require squipix/html
+```
+
+## Usage
+
+All usage is identical to `collective/html`. Replace your package references and service provider/aliases as follows:
+
+**Service Provider:**
+
+```
+Squipix\Html\HtmlServiceProvider
+```
+
+**Aliases:**
+
+```
+Form => Squipix\Html\FormFacade
+Html => Squipix\Html\HtmlFacade
+```
+
+## Changelog
+
+- Updated for Laravel 12 and PHP 8.2+
+- Fixed all PHP and PHPUnit deprecations
+- Composer package name changed to `squipix/html`
+- All namespaces changed to `Squipix\Html`
+
+## Credits
+
+Forked from [LaravelCollective/html](https://github.com/LaravelCollective/html).
+Original authors: Adam Engebretson, Taylor Otwell, and contributors.
